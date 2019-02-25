@@ -41,6 +41,12 @@ cat master.dump | grep "MASTER_LOG_FILE='"
 - IPアドレスでいいかな
 
 ### 2-2-2. レプリケーションの設定
+- master.dumpを導入する
+
+```bash
+mysql -u root -p < master.dump
+```
+
 - スレーブサーバーで以下を実行する
 
 ```sql
